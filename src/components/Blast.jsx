@@ -17,10 +17,10 @@ function Blast () {
 
   const showWish = () => {
     audioRef.current.play()
-    setTimeout( () => {
+    setTimeout( () => { 
       setHideWish( false )
       setHidden( true )
-    new Explode()
+    new Explode(500,1000,1000)
     }, 1000 );   
   }
   return (

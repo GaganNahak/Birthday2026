@@ -100,7 +100,22 @@
     }
 }
 .egg{
-    animation:  eggSizer 3s ease-in , shake 500ms 2s ease-in-out  infinite;
+    animation:  eggSizer 2s ease-in , shake 500ms 1.5s ease-in-out  infinite;
     background-color: #ffaa00;
     
+}
+@keyframes swaper{
+    0%,100%{
+        top: 0;
+    }
+    50%{
+        top: -300px;
+        z-index: 50;
+    }
+    60%{
+        z-index: 0;
+    }
+}
+.swap{
+ animation: swaper 1.5s linear forwards;
 }
