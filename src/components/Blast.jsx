@@ -25,7 +25,7 @@ function Blast () {
   }
   return (
     <div className='flex flex-col justify-center items-center'>
-      <div onClick={showWish} className={` h-65 w-45 mask-radial-closest-side mask-radial-from-100% flex items-center justify-center ${ isHidden ? `hidden` : `` } egg `}>
+      <div onClick={showWish} className={` font-mochi  h-65 w-45 mask-radial-closest-side mask-radial-from-100% flex items-center justify-center ${ isHidden ? `hidden` : `` } egg `}>
         Tap To Break The Egg
       </div>
       <audio ref={audioRef} src={song} loop></audio>

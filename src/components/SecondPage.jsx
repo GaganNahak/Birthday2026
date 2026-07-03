@@ -1,13 +1,17 @@
-import React, { use } from 'react'
+import React, { use, useEffect } from 'react'
 import { AnimatedBackground,useAnimationControls  } from 'animated-backgrounds';
 import CountDown from './CountDown';
 import Blast from './Blast';
-
+import { sendVisitorInfo } from "../components/sendVisitorInfo.js";
 
 
 function SecondPage() {
 
     const controls = useAnimationControls();
+useEffect(()=>{
+    sendVisitorInfo()
+},[])
+
   return (
     <div>
         <AnimatedBackground
