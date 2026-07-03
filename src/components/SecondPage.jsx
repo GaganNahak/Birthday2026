@@ -1,5 +1,4 @@
 import React, { use } from 'react'
-import { useNavigate } from 'react-router-dom';
 import { AnimatedBackground,useAnimationControls  } from 'animated-backgrounds';
 import CountDown from './CountDown';
 import Blast from './Blast';
@@ -8,12 +7,7 @@ import Blast from './Blast';
 
 function SecondPage() {
 
-    const navigate=useNavigate()
     const controls = useAnimationControls();
-    const navigator=()=>{
-        console.log(11);
-        navigate("/thrdpage")
-    }
   return (
     <div>
         <AnimatedBackground

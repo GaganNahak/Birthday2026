@@ -12,8 +12,8 @@ useEffect(()=>{
 
   return (
     <div className={`absolute top-55 h-65 w-50   ${isHide?`hidden`:``}`}>
-      <img src={imgArr[index]} alt="" className='h-65 w-50 object-cover absolute top-0 z-10' />
-      <img  onAnimationEnd={()=>{setSwap(false)}} src={index===0?imgArr[2]:imgArr[index-1]} alt="" className={`h-65 w-50 object-cover absolute top-0 z-0 ${swap?`swap`:``}`} />
+      <img src={imgArr[index]} alt="Loading Ghusuri" className='h-65 w-50 object-cover absolute top-0 z-10' />
+      <img  onAnimationEnd={()=>{setSwap(false)}} src={index===0?imgArr[2]:imgArr[index-1]} alt="Loading Ghusuri" className={`h-65 w-50 object-cover absolute top-0 z-0 ${swap?`swap`:``}`} />
     </div>
   )
 }
